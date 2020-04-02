@@ -599,19 +599,20 @@
     <meta name="keywords" content="theme,template,kirby,portfolio,personal" />
     <meta name="author" content="Aristotheme" />
     <link rel="shortcut icon" href="../favicon.ico">
-
+    <style>
+        .bg-1 {
+            background: #143893;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <div id="large-header" class="large-header bg-blue m0" style="height: 377px;">
-        <canvas id="animated-background"></canvas>
-    </div>
 
     <!-- 
-        	    Header start
-        	    ==================== -->
+    Header start
+    ==================== -->
     <div class="container">
         <nav class="navbar navbar-fixed-top  navigation " id="top-nav">
             <a class="navbar-brand" href="#">
@@ -643,59 +644,71 @@
 
 
     <section class="hero-area bg-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="block">
-                        <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">Bring Your Product To
-                            Light</h1>
-                        <p class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration=".5s">Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna</p>
-                        <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
-                            <a class="btn btn-home" href="#about" role="button">Get Started</a>
+        <div id="large-header" class="large-header bg-blue m0" style="height: 377px;">
+            <canvas id="animated-background"></canvas>
+            <div class="hero-title absolute m0 center caps">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="block">
+                                <h1 class="wow fadeInDown" data-wow-delay="0.3s" data-wow-duration=".2s">Bring Your
+                                    Product
+                                    To
+                                    Light</h1>
+                                <p class="wow fadeInDown" data-wow-delay="0.5s" data-wow-duration=".5s">Lorem ipsum
+                                    dolor
+                                    sit
+                                    amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore
+                                    magna</p>
+                                <div class="wow fadeInDown" data-wow-delay="0.7s" data-wow-duration=".7s">
+                                    <a class="btn btn-home" href="#about" role="button">Get Started</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-5 wow zoomIn">
-                    <div class="block">
-                        <div class="counter text-center">
-                            <ul id="countdown_dashboard">
-                                <li>
-                                    <div class="dash days_dash">
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                        <span class="dash_title">Days</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dash hours_dash">
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                        <span class="dash_title">Hours</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dash minutes_dash">
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                        <span class="dash_title">Minutes</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="dash seconds_dash">
-                                        <div class="digit">0</div>
-                                        <div class="digit">0</div>
-                                        <span class="dash_title">Seconds</span>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="col-md-5 wow zoomIn">
+                            <div class="block">
+                                <div class="counter text-center">
+                                    <ul id="countdown_dashboard">
+                                        <li>
+                                            <div class="dash days_dash">
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                                <span class="dash_title">Days</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash hours_dash">
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                                <span class="dash_title">Hours</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash minutes_dash">
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                                <span class="dash_title">Minutes</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dash seconds_dash">
+                                                <div class="digit">0</div>
+                                                <div class="digit">0</div>
+                                                <span class="dash_title">Seconds</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div><!-- .row close -->
-        </div><!-- .container close -->
+                    </div><!-- .row close -->
+                </div><!-- .container close -->
+            </div>
+        </div>
+
+
     </section>
     <!-- header close -->
 
