@@ -287,10 +287,10 @@ a:active {
       font-size: 22px; }
 
 .navigation.animated {
-  background-color: #fff;
+  background-color: #143893;
   box-shadow: 0 2px 7px 0px rgba(142, 142, 142, 0.15); }
   .navigation.animated .menu a {
-    color: #666; }
+    color: #fff; }
 
 .menu li a {
   color: #fff;
