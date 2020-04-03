@@ -328,9 +328,16 @@ a:active {
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
+  color: #143893;
+  margin-bottom: 15px;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+ }
+
+.about .content p {
   color: #7e7e7e;
-  margin-bottom: 20px;
-  font-family: 'Droid Serif', serif; }
+  text-align: justify;
+ }
 
 .about .about-slider img {
   width: 100%;
