@@ -1,51 +1,50 @@
-$(window).load(function() {
+$(window).load(function () {
     $("#preloader").fadeOut("slow");
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
 
 
-     new WOW().init();
+    new WOW().init();
 
 
-     $('#top-nav').onePageNav({
+    $('#top-nav').onePageNav({
         currentClass: 'current',
         changeHash: true,
         scrollSpeed: 1200
     });
 
-     
+
     //animated header class
-    $(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-     //console.log(scroll);
-    if (scroll > 200) {
-        //console.log('a');
-        $(".navigation").addClass("animated");
-    } else {
-        //console.log('a');
-        $(".navigation").removeClass("animated");
-    }});
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        //console.log(scroll);
+        if (scroll > 800) {
+            //console.log('a');
+            $(".navigation").addClass("animated");
+        } else {
+            //console.log('a');
+            $(".navigation").removeClass("animated");
+        }
+    });
 
     $('#countdown_dashboard').countDown({
         targetDate: {
-            'day':      30,
-            'month':    12,
-            'year':     2018,
-            'hour':     23,
-            'min':      59,
-            'sec':      59,
+            'day': 30,
+            'month': 12,
+            'year': 2018,
+            'hour': 23,
+            'min': 59,
+            'sec': 59,
         },
         omitWeeks: true
     });
 
-    $(".about-slider").owlCarousel(
-        {
+    $(".about-slider").owlCarousel({
         singleItem: true,
-        pagination : true,
-        autoPlay : 5000,
-        }
-    );
+        pagination: true,
+        autoPlay: 5000,
+    });
 
     /*$('input, textarea').data('holder', $('input, textarea').attr('placeholder'));
 
@@ -84,21 +83,21 @@ $(document).ready(function(){
             },
             email: "Please enter a valid email address"
         },
-        submitHandler: function(form) {
+        submitHandler: function (form) {
             $(form).ajaxSubmit({
-                type:"POST",
+                type: "POST",
                 data: $(form).serialize(),
-                url:"mail.php",
-                success: function() {
+                url: "mail.php",
+                success: function () {
                     $('#contact-form :input').attr('disabled', 'disabled');
-                    $('#contact-form').fadeTo( "slow", 0.15, function() {
+                    $('#contact-form').fadeTo("slow", 0.15, function () {
                         $(this).find(':input').attr('disabled', 'disabled');
-                        $(this).find('label').css('cursor','default');
+                        $(this).find('label').css('cursor', 'default');
                         $('#success').fadeIn();
                     });
                 },
-                error: function() {
-                    $('#contact-form').fadeTo( "slow", 0.15, function() {
+                error: function () {
+                    $('#contact-form').fadeTo("slow", 0.15, function () {
                         $('#error').fadeIn();
                     });
                 }
@@ -107,10 +106,3 @@ $(document).ready(function(){
     });
 
 });
-
-
-
-
-
-
-
